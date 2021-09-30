@@ -24,6 +24,8 @@ h1{
 }
 h2{
   font-size: 1.1em;
+  padding-top: 4%;
+  padding-bottom: 4%;
 }
 .demo{
     width: 100%;
@@ -140,43 +142,24 @@ h2{
 }
 .enc{
   display: flex;
-  height: 27%;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
 }
 .enc img{
   width: 65%;
 }
 
 /* swiper */
-.swiper {
-  box-sizing: border-box;
-}
 
 .swiper-slide {
-  text-align: center;
-  font-size: 18px;
 
-  /* Center slide text vertically */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
   justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
 }
 
 .swiper-slide img {
   display: block;
-  width: 75%;
+  width: 65%;
   object-fit: cover;
 }
 
@@ -197,15 +180,12 @@ h2{
   justify-content: center;
 }
 .enc a{
-  display: flex;
-}
-.enc a{
-  width: 12%;
+  width: 16%;
 }
 .iconosocial{
-  width: 80% !important;
+  width: 100% !important;
   padding: 10px;
-  box-sizing: content-box;
+  border-radius: 50%;
   background: yellow;
 }
 #whatsapp{
@@ -214,4 +194,14 @@ h2{
 
 #facebook{
   background: #0077c8 !important;
+}
+.ico{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+.rede{
+  height: 15%;
 }
