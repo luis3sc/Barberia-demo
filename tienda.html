@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barberia demo</title>
+    <link rel="stylesheet" href="demo-general.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  
+    <link rel="apple-touch-icon" href="logo-bar.png">
+    <link rel="shortcut icon" href="logo-bar.png" type="image/x-icon" />
+</head>
+<body>
+      <!-- TIENDA --><div class="marca-t zind">
+   <p>Obtén tu tarjeta digital en</p> <a href="https://ocultto.com/" target="_blank" >www.ocultto.com</a>
+  </div> 
+      <div class="popup f-black " id="tienda">
+        <a href="demo-top.html" class="popup__close">&times;</a>
+        <div class="tienda-items pd20">
+            <div class="titulo">
+              <h2 class="ama">ELIGE EL SERVICIO</h2>
+            </div>
+            <div class="servicios-bar">
+
+                <label class="card">
+                  <input class="card__input" type="checkbox"/>
+                  <div class="card__body">
+                    <div class="card__body-cover"><img class="card__body-cover-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSS66rv-NE_zdc3jEzvP-LzXu_Xz6lsiImhqQn9jmVHNSaqegcZtpWfpslzpG0tcUPquWg&usqp=CAU"/><span class="card__body-cover-checkbox"> 
+                        <svg class="card__body-cover-checkbox--svg" viewBox="0 0 12 10">
+                          <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+                        </svg></span></div>
+                    <header class="card__body-header">
+                      <h2 class="card__body-header-title">Corte</h2>
+                      <p class="card__body-header-subtitle">s./ 25.00</p>
+                    </header>
+                  </div>
+                </label>
+                <label class="card">
+                  <input class="card__input" type="checkbox"/>
+                  <div class="card__body">
+                    <div class="card__body-cover"><img class="card__body-cover-image" src="https://www.americanbarber.com/pictures/alpharetta-1.jpg"/><span class="card__body-cover-checkbox"> 
+                        <svg class="card__body-cover-checkbox--svg" viewBox="0 0 12 10">
+                          <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+                        </svg></span></div>
+                    <header class="card__body-header">
+                      <h2 class="card__body-header-title">CORTE para NIÑO</h2>
+                      <p class="card__body-header-subtitle">s./ 25.00</p>
+                    </header>
+                  </div>
+                </label>
+                <label class="card">
+                  <input class="card__input" type="checkbox"/>
+                  <div class="card__body">
+                    <div class="card__body-cover"><img class="card__body-cover-image" src="data:image/jpeg;base64,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"/><span class="card__body-cover-checkbox"> 
+                        <svg class="card__body-cover-checkbox--svg" viewBox="0 0 12 10">
+                          <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+                        </svg></span></div>
+                    <header class="card__body-header">
+                      <h2 class="card__body-header-title">BARBA</h2>
+                      <p class="card__body-header-subtitle">s./ 25.00</p>
+                    </header>
+                  </div>
+                </label>
+                <label class="card">
+                  <input class="card__input" type="checkbox"/>
+                  <div class="card__body">
+                    <div class="card__body-cover"><img class="card__body-cover-image" src="https://www.cunard.com/content/dam/cunard/inventory-assets/activity-types/Spa/barbers/barbers.jpg.1536270590585.image.750.563.low.jpg"/><span class="card__body-cover-checkbox"> 
+                        <svg class="card__body-cover-checkbox--svg" viewBox="0 0 12 10">
+                          <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+                        </svg></span></div>
+                    <header class="card__body-header">
+                      <h2 class="card__body-header-title">FACIAl</h2>
+                      <p class="card__body-header-subtitle">s./ 25.00</p>
+                    </header>
+                  </div>
+                </label>
+                <label class="card">
+                  <input class="card__input" type="checkbox"/>
+                  <div class="card__body">
+                    <div class="card__body-cover"><img class="card__body-cover-image" src="https://img.freepik.com/foto-gratis/mujer-secar-peinar-cabello-hombre_23-2147737073.jpg?size=626&ext=jpgs"/><span class="card__body-cover-checkbox"> 
+                        <svg class="card__body-cover-checkbox--svg" viewBox="0 0 12 10">
+                          <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+                        </svg></span></div>
+                    <header class="card__body-header">
+                      <h2 class="card__body-header-title">Styling</h2>
+                      <p class="card__body-header-subtitle">s./ 25.00</p>
+                    </header>
+                  </div>
+                </label>
+                <label class="card">
+                  <input class="card__input" type="checkbox"/>
+                  <div class="card__body">
+                    <div class="card__body-cover"><img class="card__body-cover-image" src="https://i.ytimg.com/vi/191f7pXwlhI/maxresdefault.jpg"/><span class="card__body-cover-checkbox"> 
+                        <svg class="card__body-cover-checkbox--svg" viewBox="0 0 12 10">
+                          <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+                        </svg></span></div>
+                    <header class="card__body-header">
+                      <h2 class="card__body-header-title">Micropigmentacion</h2>
+                      <p class="card__body-header-subtitle">s./ 25.00</p>
+                    </header>
+                  </div>
+                </label>
+                <!--
+                <label class="card">
+                  <input class="card__input" type="checkbox" disabled="disabled"/>
+                  <div class="card__body">
+                    <div class="card__body-cover"><img class="card__body-cover-image" src="https://i.ibb.co/WDwmPy5/other.png"/><span class="card__body-cover-checkbox"> 
+                        <svg class="card__body-cover-checkbox--svg" viewBox="0 0 12 10">
+                          <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+                        </svg></span></div>
+                    <header class="card__body-header">
+                      <h2 class="card__body-header-title">Other</h2>
+                      <p class="card__body-header-subtitle">s./ 25.00</p>
+                    </header>
+                  </div>
+                </label>
+          -->
+            </div>
+            <a href="#fecha" class="boton-contacto rojo">Continuar</a>
+          </div>
+      </div>
+       <!-- contactar --> 
+       <div class="popup popupsuper f-black ama " id="fecha">
+        <a href="#inicio" class="popup__close">&times;</a>
+        <div class="tienda-items pd20">
+            <div class="titulo">
+              <h2>SELECCIONA LA FECHA
+                Y HORA DE RESERVA</h2>
+            </div>
+            <div class="fecha flex-per borde-b">
+              <h3>Elige la fecha</h3>
+              <input type="date" id="start" name="trip-start"
+              value="aaaa-mm-dd"
+              min="2021-12-08" max="2032-12-31">
+            </div>
+            <div class="hora flex-per borde-b">
+              <h3>Elige la hora</h3>
+              <div class="selec-hora flex-per">
+                <input class="checkbox-tools" type="radio" name="tools" id="tool-1" checked>
+                <label class="for-checkbox-tools" for="tool-1">
+                    9 am
+                </label><!--
+                --><input class="checkbox-tools" type="radio" name="tools" id="tool-2">
+                <label class="for-checkbox-tools" for="tool-2">
+                   
+                  10 am
+                </label><!--
+                --><input class="checkbox-tools" type="radio" name="tools" id="tool-3">
+                <label class="for-checkbox-tools" for="tool-3">
+                 11 am
+                </label><!--
+                --><input class="checkbox-tools" type="radio" name="tools" id="tool-4">
+                <label class="for-checkbox-tools" for="tool-4">
+                  12 pm
+                </label><!--
+                --><input class="checkbox-tools" type="radio" name="tools" id="tool-5">
+                <label class="for-checkbox-tools" for="tool-5">
+                    1pm
+                </label><!--
+                --><input class="checkbox-tools" type="radio" name="tools" id="tool-6">
+                <label class="for-checkbox-tools" for="tool-6">
+                    2pm
+                </label>
+                <!--
+                --><input class="checkbox-tools" type="radio" name="tools" id="tool-7">
+                <label class="for-checkbox-tools" for="tool-7">
+                  3pm
+              </label>
+              <!--
+                --><input class="checkbox-tools" type="radio" name="tools" id="tool-8">
+                <label class="for-checkbox-tools" for="tool-8">
+                  4pm
+              </label>
+            <!--
+                --><input class="checkbox-tools" type="radio" name="tools" id="tool-9">
+                <label class="for-checkbox-tools" for="tool-9">
+                  5pm
+              </label>
+               <!--
+                --><input class="checkbox-tools" type="radio" name="tools" id="tool-10">
+                <label class="for-checkbox-tools" for="tool-10">
+                  6pm
+              </label>
+              <!--
+                --><input class="checkbox-tools" type="radio" name="tools" id="tool-11">
+                <label class="for-checkbox-tools" for="tool-11">
+                  7pm
+              </label>
+              </div>
+            </div>
+           
+            <a href="#pago" class="boton-contacto social arriba" id="mensaje" >Regresar</a>
+            <a href="#elegirpago" class="boton-contacto rojo">Continuar</a>
+           </div>
+      </div>
+      <!-- contactar -->
+      <div class="popup popupsuper ama f-black " id="elegirpago">
+        <a href="#pago" class="popup__close">&times;</a>
+        <div class="tienda-items pd20">
+            <div class="titulo">
+              <h2>PAGO</h2>
+            </div>
+            
+          <div class="pago-qr">
+            <p>Agrega a nuestro numero y pague vía 
+              yape o plin</p>
+              <div class="numero">
+                <div class="num copy">998881052</div>
+                <button class="icon-copy">
+                 COPIAR
+                </button></div>
+              <p>a nombre de Luis Enrqieu Melchor</p>
+          </div>
+          <div class="pagos">
+             
+            <a class="boton-pago" id="yape-color" href="#yape">ver QR <img src="yape.webp" alt=""></a>
+            <a class="boton-pago" id="plin-color" href="#plin">ver QR<img src="plin.webp" alt=""></a> 
+          </div>
+            <a href="#fecha" class="boton-contacto social arriba" id="mensaje" >Regresar</a>
+            <a href="#Terminar" class="boton-contacto social arriba" id="pinterest" > Continuar</a>
+             </div>
+      </div>
+       <!-- contactar -->
+       <div class="popup popupsuper ama f-black " id="Terminar">
+        <a href="#elegirpago" class="popup__close">&times;</a>
+        <div class="pd20 tienda-items " style="justify-content:center;">
+          
+            <div class="titulo">
+              <h2>GRACIAS POR COMPRAR</h2>
+            </div>
+            <img class="img-fin" src="logo-bar.png" alt="">
+           <p style="font-size: 1.35em;">Envíar captura de pantalla del comprabante de pago al numero de whatsapp 972417095 o Haz click en Coordinar Reserva</p>
+       
+          </br>
+            
+           
+            <a href="#tienda" class="boton-contacto social arriba" id="mensaje" >Ir a servicios</a>
+            <a href="https://api.whatsapp.com/send?phone=51972417095&text=Reserva%20de%20corte" class="boton-contacto social arriba" id="pinterest" target="_blank"> Coordinar Reserva</a>
+             </div>
+      </div>
+      <div class="popup popupsuper pd20 " id="yape">
+        <a href="#elegirpago" class="popup__close">&times;</a>
+        <div class="container-wrapper contenedor-ad pd20 yape-flex">
+            <div class="titulo">
+              <h2>QR YAPE</h2>
+            </div>
+           <p>Escanee nuestro código QR y realice el pago.</p>
+           <img src="Commons_QR_code.png" alt="">
+       
+           <!-- <p>Monto a pagar con Yape</p>
+            <h4 class="precio" id="precioSelects" >s/ 50.00</h4>
+  -->
+  <a href="#Terminar" class="boton-contacto social arriba" id="pinterest" > Continuar</a>  
+            <a href="https://play.google.com/store/apps/details?id=com.bcp.innovacxion.yapeapp&hl=es" target="_blank" class="boton-contacto social arriba" id="yape-color" > Abrir Yape</a>
+             </div>
+             
+      </div>
+      <div class="confirmation">
+        <span class="icon-checkmark"></span> Copied to clipboard
+      </div>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <script>
+        $(document).ready(function() {
+      $('button').click(function(){
+      var btntxt = $(this).text();
+      
+      var copy = $(this).parent().find('.copy').text();
+      
+      var $temp = $("<input>");
+      $("body").append($temp);
+      $temp.val(copy).select();
+      document.execCommand("copy");
+      $temp.remove();
+      
+      
+      $('.confirmation').hide().html( 972417095 + '</b> Ha sido copiado al portapapeles').fadeIn(100).delay(800).fadeOut(200);
+      
+      $( '.main' ).trigger( "click" );
+      });
+      
+      $('.main div').click(function(){
+      var range = document.createRange();
+      var selection = window.getSelection();
+      range.selectNodeContents(this);
+      selection.removeAllRanges();
+      selection.addRange(range);
+      });
+      });
+      
+      
+      </script>
+</body>
+</html>
